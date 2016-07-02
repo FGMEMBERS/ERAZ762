@@ -1,0 +1,158 @@
+<PropertyList>
+ 
+<path>ERAZ762.ac</path>
+
+
+<!-- ========== Effects ========= -->
+
+	<effect>
+		<inherits-from>Aircraft/ERAZ762/Models/Effects/aucafly</inherits-from>
+		<object-name>ERAZ 762 Body</object-name>
+		<object-name>ERAZ 762 Body2</object-name>
+		<object-name>ERAZ 762 Body3</object-name>
+		<object-name>ERAZ 762 Chrome</object-name>
+		<object-name>Front Wheel</object-name>
+		<object-name>Back Wheel</object-name>
+		<object-name>door</object-name>
+		<object-name>door2</object-name>
+		<object-name>door3</object-name>
+	</effect>
+<effect>
+ <inherits-from>Effects/model-transparent</inherits-from>
+ <object-name>ERAZ 762 Screen</object-name>
+<object-name>door4</object-name>
+</effect>
+<animation>
+  <object-name>Front Wheel</object-name>
+<object-name>Front Wheel2</object-name>
+  <type>rotate</type>
+  <property>controls/flight/aileron</property>
+  <factor>-10</factor>
+  <offset-deg>0</offset-deg>
+  <center>
+   <x-m> -2.39743 </x-m>
+   <y-m> 0.0   </y-m>
+   <z-m> 0.62204 </z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>spin</type>
+  <object-name>Front Wheel</object-name>
+<object-name>Front Wheel2</object-name>
+  <property>gear/gear[0]/rollspeed-ms</property>
+  <factor>10</factor>
+  <center>
+   <x-m> -2.39743 </x-m>
+   <y-m> 0.0   </y-m>
+   <z-m> 0.62204 </z-m>
+  </center>
+  <axis>
+	<x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+<animation>
+  <type>spin</type>
+  <object-name>Back Wheel</object-name>
+  <object-name>Back Wheel2</object-name>
+  <property>gear/gear[2]/rollspeed-ms</property>
+  <factor>5</factor>
+  <center>
+   <x-m> 2.33312 </x-m>
+   <y-m> 0.0   </y-m>
+   <z-m> 0.62204 </z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+<animation>
+  <object-name>ERAZ 762 Steering</object-name>
+  <type>rotate</type>
+  <property>controls/flight/aileron</property>
+<factor>100</factor>
+  <offset-deg>0</offset-deg>
+  <center>
+   <x-m> -2.83505 </x-m>
+   <y-m> -0.95503  </y-m>
+   <z-m> 2.04504 </z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+<animation>
+ <type>material</type>
+ <object-name>ERAZ 762 Brake</object-name>
+ <emission>
+  <red>4.0</red>
+  <green>0.0</green>
+  <blue>0.0</blue>
+  <factor-prop>/controls/gear/brake-parking</factor-prop>
+ </emission>
+</animation>
+<animation>
+ <type>material</type>
+ <object-name>ERAZ 762 Screen</object-name>
+<object-name>door4</object-name>
+ <emission>
+  <red>0.0</red>
+  <green>1.0</green>
+  <blue>4.0</blue>
+ </emission>
+</animation>
+
+<animation>
+<type>pick</type>
+<object-name>door</object-name>
+<visible>true</visible>
+<action>
+<button>0</button>
+<repeatable>false</repeatable>
+<binding>
+<command>nasal</command>
+<script>aucafly.door.toggle();</script>
+</binding>
+</action>
+<hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>door</tooltip-id>
+                <label>Door Open/Close</label>
+            </binding>
+        </hovered>
+
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>door</object-name>
+<object-name>door2</object-name>
+<object-name>door3</object-name>
+<object-name>door4</object-name>
+<property>sim/multiplay/generic/float[0]</property>
+<factor>-50</factor>
+<center>
+<x-m>-3.44278</x-m>
+<y-m>-1.45405</y-m>
+<z-m>1.38429</z-m>
+</center>
+<axis>
+<x>0</x>
+<y>0</y>
+<z>1</z>
+</axis>
+</animation>
+</PropertyList>
+ 
