@@ -1,12 +1,10 @@
 Hi,
 
-We would like to thank you for downloading our ErAZ-762.  This is without a doubt a project for motorists. 
+We would like to thank you for downloading our ErAZ 762.  This is without a doubt a project for motorists. 
 
-ErAZ-762 (ERAZ762) is licensed under GPL.
+All our vehicles is capable of driving on most terrains. 
 
-Please visit our website or Github and download our sound add-on folder (Version 2016.1.1 or newer).
-
-To learn how to take panorama photos with our cars, please visit: https://aucafly.wordpress.com/2016/06/14/how-to-take-panorama-with-aucafly-cars/
+Please visit our website or Github and download our add-on sound folder (Version 2017.1 or newer).
 
 If you believe that our vehicle has an error, you should inform us by visiting our website.  
 
@@ -14,6 +12,7 @@ We hope you enjoy our vehicle and we are looking forward to seeing snapshots and
 
 Best regards,
 
-Aucafly Team
+Bulldog RS (Part of Aucafly Group) Team
 
-Website: https://aucafly.wordpress.com/
+Website: https://bulldogrs.wordpress.com/
+Facebook:https://www.facebook.com/bulldogrsGM
